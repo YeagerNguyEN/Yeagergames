@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeager's Game Collection</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #0d0d0d;
+        color: #fff;
+      }
+      header {
+        background: #111;
+        padding: 30px 20px;
+        text-align: center;
+        font-family: "Orbitron", sans-serif;
+        font-size: 2.5em;
+        color: #00ffe1;
+        letter-spacing: 2px;
+        box-shadow: 0 2px 10px rgba(0, 255, 204, 0.1);
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        padding: 40px;
+      }
+      .card {
+        background-color: #1b1b1b;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 25px rgba(0, 255, 204, 0.3);
+      }
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .card-content {
+        padding: 20px;
+        text-align: center;
+      }
+      .card h3 {
+        margin: 0 0 15px;
+        font-size: 1.4em;
+        color: #00ffd5;
+      }
+      .card a {
+        text-decoration: none;
+        color: #0d0d0d;
+        background: #00ffcc;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+      .card a:hover {
+        background: #00c2a0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Game Collection by Yeager</header>
+    <div class="container">
+      <div class="card">
+        <img src="./FTL.png" />
+        <div class="card-content">
+          <h3>FTL</h3>
+          <a href="https://yeagernguyen.github.io/FTL/" target="_blank"
+            >Chơi ngay</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="./khunglong.jfif" />
+        <div class="card-content">
+          <h3>Khủng Long Offline</h3>
+          <a
+            href="https://yeagernguyen.github.io/khunglongoffline/"
+            target="_blank"
+            >Chơi ngay</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Math.jfif" />
+        <div class="card-content">
+          <h3>Math Quiz Puzzle</h3>
+          <a
+            href="https://yeagernguyen.github.io/Math_quizz_puzzle/"
+            target="_blank"
+            >Chơi ngay</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="./snake.jfif" />
+        <div class="card-content">
+          <h3>Classic Snake</h3>
+          <a
+            href="https://yeagernguyen.github.io/classic_snake/"
+            target="_blank"
+            >Chơi ngay</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="./flappy.jfif" />
+        <div class="card-content">
+          <h3>Flappy Bird</h3>
+          <a href="https://yeagernguyen.github.io/Flappy_bird/" target="_blank"
+            >Chơi ngay</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="./chess.jfif" />
+        <div class="card-content">
+          <h3>King Chess</h3>
+          <a href="https://yeagernguyen.github.io/kingchess/" target="_blank"
+            >Chơi ngay</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
